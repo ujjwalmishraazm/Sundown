@@ -1,0 +1,251 @@
+
+  * {
+margin: 0px;
+ padding: 0%;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+html , body{
+
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+min-height: 100vh;
+width: 100%;
+background-color: #efeaef;
+position: relative;
+}
+
+nav{
+    padding: 2vw 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_2{
+
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.nav_2 h4{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0.368);
+    font-size: 20px;
+    position: relative;
+    transition: all ease 1.3s;
+    overflow: hidden;
+}
+.nav_2 h4::after{
+content: "";
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    background-color: black;
+    left: 0;
+    bottom: -100%; 
+    transition: all ease 0.3s;
+}
+.nav_2 h4:hover::after{
+bottom: 0;
+border-radius:0;
+
+} .nav_2 h4 a{
+    text-decoration: none;
+    position: relative;
+    color: black;
+z-index: 9;
+}
+
+.nav_2 h4:hover a {
+ color: #efeaef;
+    
+}
+
+.centre{
+      height: 65vh;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between ;
+    padding: 2vw;
+    border-bottom:1px solid black ;
+    }  
+ 
+    .left h3{
+
+       width: 25vw; 
+       font-size: 1.8vw;
+       
+    }
+    .right h1{
+font-size: 10vw;
+line-height:8vw ;
+align-items: right;
+    }  
+ #page1 video{
+width: 100%;
+position: relative;
+ }
+
+
+ .hero_sec{
+position: absolute;
+height: 46vw;
+width: 36vw;
+right: 0;
+top: 64vh; 
+     
+ }
+ .hero1{
+position: absolute;
+height: 30vw;
+width: 30vw;
+border-top-left-radius: 50%;
+border-top-right-radius:50% ;
+background-color: orangered; 
+filter: blur(20px);
+ }
+ .hero2{
+position: absolute;
+height: 30vw;
+width: 30vw;
+border-radius: 50%;
+background-color: orangered;
+filter: blur(20px );
+animation-name: anime1 ;
+animation: duration 3s; 
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate ;
+ }
+ 
+ .hero3{
+position: absolute;
+height: 30vw;
+width: 30vw;
+border-radius: 50%;
+background-color: orangered; 
+filter: blur(20px );
+animation-name:ujji;
+animation: duration 3s; 
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate ;
+ }
+  @keyframes ujji {
+    from{
+        transform: translate(-20% , 20%);
+    } 
+    to{
+        transform: translate(20% ,-20%);
+    }
+  }
+
+
+      .page2{
+       min-height: 100vh;
+       width: 100%;
+       background-color: #efeaef;
+       padding: 8vw 0; 
+       position: relative;
+
+      }
+      .moving_text{ 
+        overflow-x: auto;
+     white-space: nowrap;
+      }  
+      .moving_text::-webkit-scrollbar{
+        display: none;
+      }
+      .container{
+     white-space: nowrap;
+     display: inline-block;
+     animation-name: move; 
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+      }
+         .moving_text h1{
+    font-size: 9vw;  
+    
+    display: inline-block;
+    
+         }
+      .gola{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: orangered;
+        display: inline-block;
+     margin: 3 0 vw;
+      }  
+
+
+      @keyframes move {
+        from{
+          transform: translateX(0);
+
+        }
+        to{
+          transform: translateX(-100%);
+        }
+      }
+
+      .page2_bottom{
+         height: 80vh;
+         width: 100%;
+         background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between ;
+        padding: 20px; 
+        
+        z-index: 9;
+      }  
+
+      .page2_bottom h1{
+
+        font-size: 5.5vh;
+        width: 50%;
+      }
+      .bottom_part2{
+width: 23%;
+
+      }
+      .bottom_part2 img{
+        width: 100%;
+        border-radius: 10px;
+      }  
+      .bottom_part2 p{
+        font-size: 100;
+         margin-top: 10px;
+      } 
+ 
+    /* .page2 .gooey{ 
+height: 20vw;
+width: 20vw;
+position: absolute;
+border-radius: 50%; 
+background-color: orangered; 
+top:44%;
+left: 15%; 
+filter: blur(25px);
+
+       }    
+   
+       */  
+
+       .page3{
+
+        height: 100vh;
+        width: 100%;
+        background-color: #efeaef;
+       }
